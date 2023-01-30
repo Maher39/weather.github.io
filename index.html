@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section-Page">
+
+
+        <!-- Left Section -->
+        <article class="left-Board">
+        <!-- Logo-->
+            <div class="logo">
+                <div class="image-container">
+                    <img src="./Images/logo.jpg" alt="">
+                </div>
+                <h1> Maher Alk </h1>
+            </div>
+        <!-- Logo-->
+
+            <!-- Navbar -->
+            <nav class="nav-container">
+
+                <div class="dashboard"> 
+                    <ion-icon name="home-outline"></ion-icon>
+                    <h2> Dashboard </h2>
+                </div>
+
+                <div class="calendar"> 
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <h2> Calendar </h2>
+                </div>
+            </nav>
+            <!-- Navbar -->
+
+            <!-- Darkmode -->
+            <div class="dark-light-mode">
+                <ion-icon class ="modeDark active" name="moon-outline"></ion-icon>
+                <ion-icon class="modeLight" name="sunny-outline"></ion-icon>
+                <label class="switch">
+                    <input type="checkbox" class="checkbox">
+                    <div class="slider"></div>
+                </label>
+            </div>
+            <!-- Darkmode -->
+
+        </article>
+        <!-- Left Section -->
+
+        <!-- Middle Section -->
+        <article class="middle-Board">
+            <!-- Menu-->
+            <div class="menu">
+                <ion-icon name="options-outline"></ion-icon>
+            </div>
+            <!-- Menu-->
+                <!-- Date -->
+                <div class="date-container">
+                    <h1> January 2023 </h1>
+                    <p> Friday , Jan 6</p>
+                    <h2> 8:45 AM</h2>
+                </div>
+                <!-- Date -->
+                <!-- Location -->
+                <div class="location-container">
+
+                    <div class="input-container">
+                        <input class ="search-bar" type="text" placeholder="Search location here">
+                        <button class="searchIn"> <ion-icon name="search-outline"></ion-icon> </button>
+                    </div>
+                    
+                    <div class="profile-container">
+                        <ion-icon id="profile" name="person-sharp"></ion-icon>
+                        <img class="profile-hid" src="./Images/logo.jpg" alt="">
+                    </div>
+
+                </div>
+                <!-- Location -->
+                <!-- Title -->
+                <div class="overview-title">
+                    <h4> Today overview </h4>
+                    <a href=""> More detail</a>
+                </div>
+                <!-- Title -->
+                <!-- Card Box-->
+                <div class="middle-box">
+
+                    <div class="card-container">
+
+                        <div class="card">
+
+                            <div class="icon__container">
+                                <ion-icon name="speedometer-outline"></ion-icon>
+                            </div>
+
+                            <div class="overview-content">
+                                    <h2> Wind Speed</h2>
+                                    <h3 id="windSpeed"> 20km/h</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+
+                            <div class="icon__container">
+                                <ion-icon name="water-outline"></ion-icon>
+                            </div>
+
+                            <div class="overview-content">
+                                    <h2> Humidity </h2>
+                                    <h3 id="humidity"> 20% </h3>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+
+                            <div class="icon__container">
+                                <ion-icon name="cloud-download-outline"></ion-icon>
+                            </div>
+
+                            <div class="overview-content">
+                                    <h2> Pressure </h2>
+                                    <h3 id="pressure"> 720 hpa </h3>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+
+                            <div class="icon__container">
+                                <ion-icon name="thermometer-outline"></ion-icon>
+                            </div>
+
+                            <div class="overview-content">
+                                    <h2> Max Temperatur </h2>
+                                    <h3 id="max_temp"> 2.3 </h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Box-->
+            </div>
+
+
+        </article>
+        <!-- Middle Section -->
+
+         <!-- Right Section -->
+        <article class="right-Board">
+
+           <div class="choosen__location">
+
+                    <h1 id="locationCity"> Tokyo </h1>
+           </div>
+
+           <div class="weather_status_pic">
+
+                <div class="status_pic_container">
+                    <img id="svgIcon" src="./Weather Icons/clouds.svg"> 
+                </div>
+            </div>
+
+                <div class="weather_status_name">
+                    <h4 id="temp"> 20° C </h4>
+                    <h5 id="description"> Sunny  Clear</h5>
+                </div>
+
+        </article>
+        <!-- Right Section -->
+
+    </section>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+</html>
